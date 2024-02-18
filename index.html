@@ -11,14 +11,152 @@
 </head>
 
 <body>
-    <header class="lg:container">
+    <header class="lg:container mx-auto lg:px-10 mb-20">
         <nav>
-
+            <div class="navbar bg-base-100 font-raleway">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-medium">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost font-extrabold text-4xl">E-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-[#1DD100] text-xl font-bold">Bus<img src="images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
         </nav>
+        <section class="font-raleway relative">
+            <!-- Banner Section -->
+            <div class="hero min-h-screen rounded-[40px]" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-30 rounded-[40px]"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-xl">
+                        <h1 class="mb-5 text-5xl font-extrabold text-white">End-to-End Travel with <br><span class="text-[#1DD100]">P
+                                Paribahan</span></h1>
+                        <p class="mb-5 p-title">Yes, you can run unit tests and view the results directly within the
+                            app. The
+                            integrated testing features allow for a streamlined .</p>
+                        <button class="text-[#030712] text-xl font-bold bg-[#1DD100] p-5 rounded-2xl">Buy
+                            Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner div of ad -->
+            <div class="lg:-mt-14 flex flex-col lg:flex-row justify-center gap-x-3">
+                <div class="stats shadow font-inter mb-4 border-b-4 border-[#1DD100] rounded-3xl">
+                    <div class="flex flex-row gap-x-4  py-4 px-8">
+                        <div class="stat-figure text-secondary">
+                            <div class="avatar">
+                                <div class="w-16">
+                                    <img src="images/people.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="stat-value">500K+</h1>
+                            <p class="stat-title">Registered users</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="stats shadow font-inter mb-4 border-b-4 border-[#1DD100] rounded-3xl">
+                    <div class="flex flex-row gap-x-4  py-4 px-8">
+                        <div class="stat-figure text-secondary">
+                            <div class="avatar">
+                                <div class="w-16">
+                                    <img src="images/people.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="stat-value">500K+</h1>
+                            <p class="stat-title">Registered users</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="stats shadow font-inter mb-4 border-b-4 border-[#1DD100] rounded-3xl">
+                    <div class="flex flex-row gap-x-4  py-4 px-8">
+                        <div class="stat-figure text-secondary">
+                            <div class="avatar">
+                                <div class="w-16">
+                                    <img src="images/people.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="stat-value">500K+</h1>
+                            <p class="stat-title">Registered users</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </header>
 
     <main>
+        <!-- offer/cupon section -->
+        <section class="lg:container mx-auto lg:px-10 mb-20">
+            <!-- title -->
+            <div class="title-text">
+                <h1 class="">Best offers for you</h1>
+            </div>
 
+            <!-- cupon -->
+            <div class="border-2 border-red-800 max-h-fit">
+                <div class="grid grid-cols-10 border-2 border-red-950 w-fit max-h-fit bg-contain bg-no-repeat font-inter" style="background-image: url(images/Rectangle-8-yellow.svg);">
+                    <!-- text -->
+                    <div class="col-span-5">
+                        <h1 class="font-bold text-[40px]">15% OFF</h1>
+                    <h3 class="font-semibold text-xl text-[#030712CC]">on your next purchase</h3>
+                    <p class="font-medium text-lg text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <!-- cupon devider -->
+                    
+                        <img  class="col-span-1 border-2 border-black" src="images/cupon-devider.png" alt="">
+                    
+                    <!-- text -->
+                    <div class="col-span-4">
+                        <h1 class="">NEW15</h1>
+                        <p class="">Coupon Code</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- sit booking -->
+        <section class="bg-[#F7F8F8]">
+            <div class="lg:container mx-auto lg:px-10 mb-20">
+                <div class="text-center">
+                    <h1 class="title-text">P.H Paribahan</h1>
+                    <p class="mx-auto p-title">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
