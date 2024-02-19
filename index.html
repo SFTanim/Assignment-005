@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="lg:container mx-auto lg:px-10 mb-20">
+    <header class="lg:container mx-auto lg:px-10 mb-20 hidden">
         <nav>
             <div class="navbar bg-base-100 font-raleway">
                 <div class="navbar-start">
@@ -52,7 +52,8 @@
                 <div class="hero-overlay bg-opacity-30 rounded-[40px]"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-xl">
-                        <h1 class="mb-5 text-5xl font-extrabold text-white">End-to-End Travel with <br><span class="text-[#1DD100]">P
+                        <h1 class="mb-5 text-5xl font-extrabold text-white">End-to-End Travel with <br><span
+                                class="text-[#1DD100]">P
                                 Paribahan</span></h1>
                         <p class="mb-5 p-title">Yes, you can run unit tests and view the results directly within the
                             app. The
@@ -119,41 +120,124 @@
 
     <main>
         <!-- offer/cupon section -->
-        <section class="lg:container mx-auto lg:px-10 mb-20">
+        <section class="lg:container mx-auto lg:px-10 mb-20 hidden">
             <!-- title -->
             <div class="title-text">
                 <h1 class="">Best offers for you</h1>
             </div>
 
             <!-- cupon -->
-            <div class="border-2 border-red-800 max-h-fit">
-                <div class="grid grid-cols-10 border-2 border-red-950 w-fit max-h-fit bg-contain bg-no-repeat font-inter" style="background-image: url(images/Rectangle-8-yellow.svg);">
-                    <!-- text -->
-                    <div class="col-span-5">
-                        <h1 class="font-bold text-[40px]">15% OFF</h1>
-                    <h3 class="font-semibold text-xl text-[#030712CC]">on your next purchase</h3>
-                    <p class="font-medium text-lg text-[#03071280]">use by January 2024</p>
-                    </div>
-                    <!-- cupon devider -->
-                    
-                        <img  class="col-span-1 border-2 border-black" src="images/cupon-devider.png" alt="">
-                    
-                    <!-- text -->
-                    <div class="col-span-4">
-                        <h1 class="">NEW15</h1>
-                        <p class="">Coupon Code</p>
+            <div class="border-2 border-red-800 max-h-fit flex ">
+                <div class="relative max-h-full w-fit">
+                    <img src="images/Rectangle-8-yellow.svg" alt="">
+                    <!-- cupon text -->
+                    <div class="absolute top-0 min-h-full max-w-[573px] grid grid-flow-col items-center">
+                        <!-- text -->
+                        <div class="mx-4 max-h-fit lg:mx-16">
+                            <h1 class="font-bold text-[10px] lg:text-[40px]">15% OFF</h1>
+                            <h3 class="font-semibold text-[10px] lg:text-xl text-[#030712CC]">on your next purchase</h3>
+                            <p class="font-medium text-[8px] lg:text-lg text-[#03071280]">use by January 2024</p>
+                        </div>
+                        <!-- cupon devider -->
+                        <div class="min-h-fit">
+                            <img class="max-h-fit" src="images/cupon-devider.png" alt="">
+                        </div>
 
+                        <!-- text -->
+                        <div class="mx-8 font-raleway">
+                            <h1 class="font-bold text-[9px] lg:text-[32px] text-[#030712]">NEW15</h1>
+                            <p class="text-[#03071266]">Coupon Code</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="relative max-h-full w-fit">
+                    <img src="images/Rectangle-8-yellow.svg" alt="">
+                    <!-- cupon text -->
+                    <div class="absolute top-0 min-h-full max-w-[573px] grid grid-flow-col items-center">
+                        <!-- text -->
+                        <div class="mx-4 max-h-fit lg:mx-16">
+                            <h1 class="font-bold text-[10px] lg:text-[40px]">15% OFF</h1>
+                            <h3 class="font-semibold text-[10px] lg:text-xl text-[#030712CC]">on your next purchase</h3>
+                            <p class="font-medium text-[8px] lg:text-lg text-[#03071280]">use by January 2024</p>
+                        </div>
+                        <!-- cupon devider -->
+                        <div class="min-h-fit">
+                            <img class="max-h-fit" src="images/cupon-devider.png" alt="">
+                        </div>
+
+                        <!-- text -->
+                        <div class="mx-8 font-raleway">
+                            <h1 class="font-bold text-[9px] lg:text-[32px] text-[#030712]">NEW15</h1>
+                            <p class="text-[#03071266]">Coupon Code</p>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- sit booking -->
-        <section class="bg-[#F7F8F8]">
+        <!-- Section: sit booking -->
+        <section class="bg-[#F7F8F8] border-t-2 rounded-t-[50px] border-[#1DD100] py-20">
+            <!-- this section title -->
             <div class="lg:container mx-auto lg:px-10 mb-20">
                 <div class="text-center">
                     <h1 class="title-text">P.H Paribahan</h1>
-                    <p class="mx-auto p-title">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                    <p class="mx-auto p-title">Yes, you can run unit tests and view the results directly within the app.
+                        The integrated testing features allow for a streamlined .</p>
+                </div>
+
+                <!-- ticket details -->
+                <div class="relative max-h-full w-full my-10 mx-auto">
+                    <img class="w-full" src="images/Rectangle-8-white.svg" alt="">
+                    <!-- cupon text -->
+                    <div class="absolute top-0 w-full min-h-full grid grid-flow-col items-center justify-evenly">
+
+                        <!-- text -->
+                        <div class="">
+                            <div class="flex justify-between mb-4">
+                                <div class="flex items-center gap-4">
+                                    <div>
+                                        <img src="images/bus-logo.png" alt="">
+                                    </div>
+                                    <div>
+                                        <h1 class="font-bold text-[32px] font-raleway">Greenline Paribahan</h1>
+                                        <p class="text-lg font-inter  text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a class="btn text-[#1DD100] text-base font-bold font-inter"><img src="images/seat-green.png" alt=""><span id="">40</span> Seats left</a>
+                                </div>
+                            </div>
+
+                            <div class="bg-[#F7F8F8] p-8 rounded-3xl">
+                                <div class="flex justify-between font-raleway text-lg font-semibold py-4 border-b-2 border-dashed">
+                                    <h1 class="text-[#03071299]">Route</h1>
+                                    <h1>Dhaka - Sylhet</h1>
+                                </div>
+                                <div class="flex justify-between font-raleway text-lg font-semibold py-4 border-b-2 border-dashed">
+                                    <h1 class="text-[#03071299]">Departure Time</h1>
+                                    <h1>9:00 PM</h1>
+                                </div>
+                                <div class="flex justify-between font-raleway text-lg font-semibold py-5 gap-6">
+                                    <a class="btn text-base font-medium font-inter text-[#030712CC] bg-[#0307120D]">Boarding Point - Laxmipur</a>
+                                    <a class="btn text-base font-medium font-inter text-[#030712CC] bg-[#0307120D]">Dropping Point - Bogura</a>
+                                    <a class="btn text-base font-medium font-inter text-[#030712CC] bg-[#0307120D]">Est. Time - 11 Hour</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- devider -->
+                     
+                            <img class="min-h-full" src="images/info-devider.svg" alt="">
+
+                        <!-- text -->
+                        <div class=" font-raleway flex flex-col items-center gap-y-2 ">
+                            <img src="images/fare.png" alt="">
+                            <h1 class="font-bold text-[9px] lg:text-[32px] text-[#030712]">550 Taka</h1>
+                            <p class="text-[#03071266] text-2xl font-semibold">Per Seat</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
