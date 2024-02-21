@@ -86,7 +86,7 @@ for (let sit of allSitButton) {
     })
 }
 
-
+// For discount
 function discount(total) {
     let newSeat = document.createElement('tr');
     // newSeat.setAttribute('id', event.target.innerText);
@@ -99,6 +99,7 @@ function discount(total) {
     document.getElementById('tbody-discount').appendChild(newSeat);
 }
 
+// For coupon
 function cuponClick() {
     let x = document.getElementById('cupon-input').value;
     if (x == 'NEW15') {
@@ -120,18 +121,35 @@ function cuponClick() {
 }
 
 
-function successSection(){
-    let nameInput = document.getElementById('name-input').value
-    let phoneInput = document.getElementById('phone-input').value
 
-    if(nameInput !== '' && phoneInput !== ''){
-        document.getElementById('main-header').setAttribute('class', 'hidden');
-        document.getElementById('offer-sec').setAttribute('class', 'hidden');
-        document.getElementById('ticket-booking').setAttribute('class', 'hidden');
-        document.getElementById('success-section').removeAttribute('class', 'hidden');
+// Next Button Function
+function successSection() {
+    let nameInput = document.getElementById('name-input').value;
+    let phoneInput = document.getElementById('phone-input').value;
+    
+    if (nameInput !== '' && phoneInput !== '') {
+        hideElementByID('main-header')
+        hideElementByID('offer-sec')
+        hideElementByID('ticket-booking')
+        hideElementByID('main-footer')
+        unhideElementByID('success-section')
+        event.preventDefault()
+        
+    } else {
+        console.log('its not working')
     }
+}
 
-};
-// Success Section
-// function successSection(){
-// }
+// Continue Button Function
+function continueButton(){
+    location.reload()    
+}
+
+// to hide a section
+function hideElementByID(elementIdName) {
+    document.getElementById(elementIdName).classList.add('hidden');
+}
+// to unhide a section
+function unhideElementByID(elementIdName) {
+    document.getElementById(elementIdName).classList.remove('hidden');
+}
