@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="lg:container mx-auto lg:px-10 mb-20 ">
+    <header id="main-header" class="lg:container mx-auto lg:px-10 mb-20 ">
         <!-- Navigation -->
         <nav>
             <div class="navbar bg-base-100 font-raleway">
@@ -122,9 +122,9 @@
         </section>
     </header>
 
-    <main class="">
+    <main id="main-container" class="">
         <!-- offer/cupon section -->
-        <section class="lg:container mx-auto lg:px-10 mb-20 ">
+        <section id="offer-sec" class="lg:container mx-auto lg:px-10 mb-20 ">
             <!-- title -->
             <div class="title-text text-center my-6">
                 <h1 class="">Best offers for you</h1>
@@ -179,7 +179,7 @@
             </div>
         </section>
 
-        
+
         <!-- Section: sit booking -->
         <section id="ticket-booking" class="bg-[#F7F8F8] border-t-2 rounded-t-[50px] border-[#1DD100] py-20">
             <!-- this section title -->
@@ -483,12 +483,12 @@
                                 <!-- Details Section -->
                                 <div class="w-full">
                                     <h1 class="py-2 font-inter font-semibold text-lg">Passenger Name*</h1>
-                                    <input type="text" placeholder="Enter your name"
+                                    <input id="name-input" type="text" placeholder="Enter your name"
                                         class="input input-bordered w-full py-7 text-black" required />
                                 </div>
                                 <div class="w-full">
                                     <h1 class="py-2 font-inter font-semibold text-lg">Phone Number*</h1>
-                                    <input type="number" placeholder="Enter your phone number"
+                                    <input id="phone-input" type="number" placeholder="Enter your phone number"
                                         class="input input-bordered w-full py-7 text-black" required />
                                 </div>
                                 <div class="w-full">
@@ -496,8 +496,7 @@
                                     <input type="email" placeholder="Enter your email address"
                                         class="input input-bordered w-full py-7 text-black" />
                                 </div>
-                                <button id="next-button"
-                                    class="btn bg-[#1DD100] text-white w-full my-4 text-xl">Next</button>
+                                <button id="next-button" onclick="successSection()" class="btn bg-[#1DD100] text-white w-full my-4 text-xl">Next</button>
                                 <div class="flex text-[#03071299] justify-evenly">
                                     <h1 class="">Terms and Conditions</h1>
                                     <h1 class="">Cancellation Policy</h1>
@@ -508,20 +507,22 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- Success section -->
+        <section id="success-section" class="hidden bg-[#F7F8F8] h-screen max-h-screen pt-20 border-2 border-black">
+            <div id="successful" class="font-roboto text-xl text-center mx-auto max-w-fit bg-white p-10 rounded-3xl space-y-3">
+                <img class="mx-auto" src="images/success.png" alt="">
+                <h1 class="text-[#27AE60] text-2xl font-bold">SUCCESS</h1>
+                <h3 class="max-w-[700px] text-[#4A4A4A] font-medium">Thank you for Booking Our Bus Seats.
+                    We are working hard to find the best service and deals for you. </h3>
+                <h3 class="font-light">Shortly you will find a confirmation in your email.</h3>
+                <button class="btn bg-[#27AE60] text-white px-20 rounded-3xl font-semibold">Continue</button>
+            </div>
+        </section>
     </main>
 
 
-    <!-- Success section -->
-    <section class="bg-[#F7F8F8] h-screen max-h-screen pt-20">
-        <div id="successful" class="font-roboto text-xl text-center mx-auto max-w-fit bg-white p-10 rounded-3xl space-y-3">
-            <img class="mx-auto" src="images/success.png" alt="">
-            <h1 class="text-[#27AE60] text-2xl font-bold">SUCCESS</h1>
-            <h3 class="max-w-[700px] text-[#4A4A4A] font-medium">Thank you for Booking Our Bus Seats. 
-                We are working hard to find the best service and deals for you. </h3>
-            <h3 class="font-light">Shortly you will find a confirmation in your email.</h3>
-            <button class="btn bg-[#27AE60] text-white px-20 rounded-3xl font-semibold">Continue</button>
-        </div>
-    </section>
 
     <footer>
 

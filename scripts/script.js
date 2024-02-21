@@ -118,3 +118,20 @@ function cuponClick() {
     }
     // console.log(document.getElementById('cupon-input').value);
 }
+
+
+function successSection(){
+    let nameInput = document.getElementById('name-input').value
+    let phoneInput = document.getElementById('phone-input').value
+
+    if(nameInput !== '' && phoneInput !== ''){
+        document.getElementById('main-header').setAttribute('class', 'hidden');
+        document.getElementById('offer-sec').setAttribute('class', 'hidden');
+        document.getElementById('ticket-booking').setAttribute('class', 'hidden');
+        document.getElementById('success-section').removeAttribute('class', 'hidden');
+    }
+
+};
+// Success Section
+// function successSection(){
+// }
