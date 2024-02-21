@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <header class="lg:container mx-auto lg:px-10 mb-20 hidden">
+    <header class="lg:container mx-auto lg:px-10 mb-20 ">
+        <!-- Navigation -->
         <nav>
             <div class="navbar bg-base-100 font-raleway">
                 <div class="navbar-start">
@@ -46,6 +47,7 @@
                 </div>
             </div>
         </nav>
+        <!-- Banner -->
         <section class="font-raleway relative">
             <!-- Banner Section -->
             <div class="hero min-h-screen rounded-[40px]" style="background-image: url(images/banner.png);">
@@ -58,8 +60,10 @@
                         <p class="mb-5 p-title">Yes, you can run unit tests and view the results directly within the
                             app. The
                             integrated testing features allow for a streamlined .</p>
-                        <button class="text-[#030712] text-xl font-bold bg-[#1DD100] p-5 rounded-2xl">Buy
-                            Tickets</button>
+                        <a href="#ticket-booking"><button
+                                class="text-[#030712] text-xl font-bold bg-[#1DD100] p-5 rounded-2xl">Buy
+                                Tickets</button></a>
+
                     </div>
                 </div>
             </div>
@@ -87,13 +91,13 @@
                         <div class="stat-figure text-secondary">
                             <div class="avatar">
                                 <div class="w-16">
-                                    <img src="images/people.png" />
+                                    <img src="images/ticket-cupon.png" />
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <h1 class="stat-value">500K+</h1>
-                            <p class="stat-title">Registered users</p>
+                            <h1 class="stat-value">1.7 lacks</h1>
+                            <p class="stat-title">Tickets sold</p>
                         </div>
                     </div>
 
@@ -103,13 +107,13 @@
                         <div class="stat-figure text-secondary">
                             <div class="avatar">
                                 <div class="w-16">
-                                    <img src="images/people.png" />
+                                    <img src="images/stoppage.png" />
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <h1 class="stat-value">500K+</h1>
-                            <p class="stat-title">Registered users</p>
+                            <h1 class="stat-value">80K+</h1>
+                            <p class="stat-title">Rental partners</p>
                         </div>
                     </div>
 
@@ -118,25 +122,25 @@
         </section>
     </header>
 
-    <main>
+    <main class="">
         <!-- offer/cupon section -->
-        <section class="lg:container mx-auto lg:px-10 mb-20 hidden">
+        <section class="lg:container mx-auto lg:px-10 mb-20 ">
             <!-- title -->
-            <div class="title-text">
+            <div class="title-text text-center my-6">
                 <h1 class="">Best offers for you</h1>
             </div>
 
             <!-- cupon -->
-            <div class="border-2 border-red-800 max-h-fit flex ">
-                <div class="relative max-h-full w-fit">
-                    <img src="images/Rectangle-8-yellow.svg" alt="">
+            <div class=" max-h-fit flex justify-evenly">
+                <div class="flex flex-col lg:flex-row gap-4">
+
                     <!-- cupon text -->
-                    <div class="absolute top-0 min-h-full max-w-[573px] grid grid-flow-col items-center">
+                    <div class=" grid grid-flow-col items-center bg-[#FFBF0F] rounded-3xl max-h-fit">
                         <!-- text -->
-                        <div class="mx-4 max-h-fit lg:mx-16">
-                            <h1 class="font-bold text-[10px] lg:text-[40px]">15% OFF</h1>
-                            <h3 class="font-semibold text-[10px] lg:text-xl text-[#030712CC]">on your next purchase</h3>
-                            <p class="font-medium text-[8px] lg:text-lg text-[#03071280]">use by January 2024</p>
+                        <div class="mx-0 lg:mx-16 px-6">
+                            <h1 class="font-bold text-3xl">15% OFF</h1>
+                            <h3 class="font-semibold text-lg text-[#030712CC]">on your next purchase</h3>
+                            <p class="font-medium text-base text-[#03071280]">use by January 2024</p>
                         </div>
                         <!-- cupon devider -->
                         <div class="min-h-fit">
@@ -144,22 +148,20 @@
                         </div>
 
                         <!-- text -->
-                        <div class="mx-8 font-raleway">
-                            <h1 class="font-bold text-[9px] lg:text-[32px] text-[#030712]">NEW15</h1>
+                        <div class="mx-2 lg:mx-8 font-raleway px-4">
+                            <h1 class="font-bold text-3xl text-[#030712]">NEW15</h1>
                             <p class="text-[#03071266]">Coupon Code</p>
 
                         </div>
                     </div>
-                </div>
-                <div class="relative max-h-full w-fit">
-                    <img src="images/Rectangle-8-yellow.svg" alt="">
+
                     <!-- cupon text -->
-                    <div class="absolute top-0 min-h-full max-w-[573px] grid grid-flow-col items-center">
+                    <div class=" grid grid-flow-col items-center bg-[#F78C9C] rounded-3xl max-h-fit">
                         <!-- text -->
-                        <div class="mx-4 max-h-fit lg:mx-16">
-                            <h1 class="font-bold text-[10px] lg:text-[40px]">15% OFF</h1>
-                            <h3 class="font-semibold text-[10px] lg:text-xl text-[#030712CC]">on your next purchase</h3>
-                            <p class="font-medium text-[8px] lg:text-lg text-[#03071280]">use by January 2024</p>
+                        <div class="mx-0 lg:mx-16 px-6">
+                            <h1 class="font-bold text-3xl">20% OFF</h1>
+                            <h3 class="font-semibold text-lg text-[#030712CC]">on your next purchase</h3>
+                            <p class="font-medium text-base text-[#03071280]">use by January 2024</p>
                         </div>
                         <!-- cupon devider -->
                         <div class="min-h-fit">
@@ -167,8 +169,8 @@
                         </div>
 
                         <!-- text -->
-                        <div class="mx-8 font-raleway">
-                            <h1 class="font-bold text-[9px] lg:text-[32px] text-[#030712]">NEW15</h1>
+                        <div class="mx-2 lg:mx-8 font-raleway px-0 lg:px-4">
+                            <h1 class="font-bold text-3xl text-[#030712]">Couple 20</h1>
                             <p class="text-[#03071266]">Coupon Code</p>
 
                         </div>
@@ -177,8 +179,9 @@
             </div>
         </section>
 
+        
         <!-- Section: sit booking -->
-        <section class="bg-[#F7F8F8] border-t-2 rounded-t-[50px] border-[#1DD100] py-20">
+        <section id="ticket-booking" class="bg-[#F7F8F8] border-t-2 rounded-t-[50px] border-[#1DD100] py-20">
             <!-- this section title -->
             <div class="lg:container mx-auto lg:px-10 mb-20">
                 <div class="text-center">
@@ -189,14 +192,16 @@
 
                 <!-- ticket details -->
                 <div class="relative max-h-full w-full my-10 mx-auto">
-                    <img class="w-full" src="images/Rectangle-8-white.svg" alt="">
+
                     <!-- cupon text -->
-                    <div class="absolute top-0 w-full min-h-full grid grid-flow-col items-center justify-evenly">
+                    <div
+                        class="grid grid-flow-row lg:grid-flow-col items-center justify-center lg:justify-evenly bg-white rounded-3xl p-4 lg:p-0">
 
                         <!-- text -->
                         <div class="">
-                            <div class="flex justify-between mb-4">
-                                <div class="flex items-center gap-4">
+                            <!-- first line -->
+                            <div class="flex justify-between mb-4 flex-col lg:flex-row items-center">
+                                <div class="flex items-center gap-4 p-4">
                                     <div>
                                         <img src="images/bus-logo.png" alt="">
                                     </div>
@@ -206,42 +211,317 @@
                                     </div>
                                 </div>
                                 <div class="">
-                                    <a class="btn text-[#1DD100] text-base font-bold font-inter"><img src="images/seat-green.png" alt=""><span id="">40</span> Seats left</a>
+                                    <a class="btn text-[#1DD100] text-base font-bold font-inter"><img
+                                            src="images/seat-green.png" alt=""><span id="seats-left">40</span> Seats
+                                        left</a>
                                 </div>
                             </div>
-
+                            <!-- Second Line -->
                             <div class="bg-[#F7F8F8] p-8 rounded-3xl">
-                                <div class="flex justify-between font-raleway text-lg font-semibold py-4 border-b-2 border-dashed">
+                                <div
+                                    class="flex justify-between font-raleway text-lg font-semibold py-4 border-b-2 border-dashed">
                                     <h1 class="text-[#03071299]">Route</h1>
                                     <h1>Dhaka - Sylhet</h1>
                                 </div>
-                                <div class="flex justify-between font-raleway text-lg font-semibold py-4 border-b-2 border-dashed">
+                                <div
+                                    class="flex justify-between font-raleway text-lg font-semibold py-4 border-b-2 border-dashed">
                                     <h1 class="text-[#03071299]">Departure Time</h1>
                                     <h1>9:00 PM</h1>
                                 </div>
-                                <div class="flex justify-between font-raleway text-lg font-semibold py-5 gap-6">
-                                    <a class="btn text-base font-medium font-inter text-[#030712CC] bg-[#0307120D]">Boarding Point - Laxmipur</a>
-                                    <a class="btn text-base font-medium font-inter text-[#030712CC] bg-[#0307120D]">Dropping Point - Bogura</a>
-                                    <a class="btn text-base font-medium font-inter text-[#030712CC] bg-[#0307120D]">Est. Time - 11 Hour</a>
+                                <div
+                                    class="inline-block justify-between text-center font-raleway text-lg font-semibold py-5 space-y-2">
+                                    <a class="btn text-base font-medium font-inter text-[#030712CC] bg-[#0307120D]">Boarding
+                                        Point - Laxmipur</a>
+                                    <a class="btn text-base font-medium font-inter text-[#030712CC] bg-[#0307120D]">Dropping
+                                        Point - Bogura</a>
+                                    <a class="btn text-base font-medium font-inter text-[#030712CC] bg-[#0307120D]">Est.
+                                        Time - 11 Hour</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- devider -->
-                     
-                            <img class="min-h-full" src="images/info-devider.svg" alt="">
+
+                        <img class="mx-auto min-h-fit hidden lg:block" src="images/info-devider.svg" alt="">
 
                         <!-- text -->
-                        <div class=" font-raleway flex flex-col items-center gap-y-2 ">
+                        <div class=" font-raleway flex flex-col items-center gap-y-2 my-10 lg:my-0">
                             <img src="images/fare.png" alt="">
-                            <h1 class="font-bold text-[9px] lg:text-[32px] text-[#030712]">550 Taka</h1>
+                            <h1 class="font-bold text-[32px] text-[#030712]">550 Taka</h1>
                             <p class="text-[#03071266] text-2xl font-semibold">Per Seat</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sitting planning details -->
+                <div class="relative max-h-full w-full my-10 mx-auto">
+                    <div class="bg-white rounded-3xl p-8 flex flex-col lg:flex-row ">
+
+
+                        <!-- left side -->
+                        <div class="flex-1 border-r-2 border-dashed px-10">
+                            <h1 class="font-raleway font-semibold text-3xl py-4 border-b-2 border-dashed">Select
+                                Your Seat</h1>
+                            <div class="flex justify-between py-4 border-b-2 border-dashed">
+                                <div class="font-inter font-medium text-lg text-[#03071280] flex gap-2"><img
+                                        src="images/seat-gray.png" alt="">
+                                    <h1>Available</h1>
+                                </div>
+                                <div class="font-inter font-medium text-lg text-[#1DD100] flex gap-2"><img
+                                        src="images/seat-green-filled.png" alt="">
+                                    <h1>Available</h1>
+                                </div>
+                            </div>
+                            <div id="warning-4sit" class=" hidden">
+                                <h1 class="*text-sm text-red-500 ">*You can not buy more then 4sit</h1>
+                            </div>
+                            <div class="flex justify-end">
+                                <kbd class="kbd px-8 py-2 my-4"><img src="images/wheel.svg" alt=""></kbd>
+                            </div>
+
+                            <!-- All Sit Number keys -->
+                            <div class="">
+                                <!-- Sit : A -->
+                                <div class="flex items-center justify-between mb-5">
+                                    <h1 class="px-5">A</h1>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">A1</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">A2</kbd>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">A3</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">A4</kbd>
+                                    </div>
+                                </div>
+
+                                <!-- Sit : B -->
+                                <div class="flex items-center justify-between mb-5">
+                                    <h1 class="px-5">B</h1>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">B1</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">B2</kbd>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">B3</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">B4</kbd>
+                                    </div>
+                                </div>
+
+                                <!-- Sit : C -->
+                                <div class="flex items-center justify-between mb-5">
+                                    <h1 class="px-5">C</h1>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">C1</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">C2</kbd>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">C3</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">C4</kbd>
+                                    </div>
+                                </div>
+
+                                <!-- Sit : D -->
+                                <div class="flex items-center justify-between mb-5">
+                                    <h1 class="px-5">D</h1>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">D1</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">D2</kbd>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">D3</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">D4</kbd>
+                                    </div>
+                                </div>
+
+                                <!-- Sit : E -->
+                                <div class="flex items-center justify-between mb-5">
+                                    <h1 class="px-5">E</h1>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">E1</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">E2</kbd>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">E3</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">E4</kbd>
+                                    </div>
+                                </div>
+
+                                <!-- Sit : F -->
+                                <div class="flex items-center justify-between mb-5">
+                                    <h1 class="px-5">F</h1>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">F1</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">F2</kbd>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">F3</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">F4</kbd>
+                                    </div>
+                                </div>
+
+                                <!-- Sit : G -->
+                                <div class="flex items-center justify-between mb-5">
+                                    <h1 class="px-5">G</h1>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">G1</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">G2</kbd>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">G3</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">G4</kbd>
+                                    </div>
+                                </div>
+
+                                <!-- Sit : H -->
+                                <div class="flex items-center justify-between mb-5">
+                                    <h1 class="px-5">H</h1>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">H1</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">H2</kbd>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">H3</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">H4</kbd>
+                                    </div>
+                                </div>
+
+                                <!-- Sit : I -->
+                                <div class="flex items-center justify-between mb-5">
+                                    <h1 class="px-5">I</h1>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">I1</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">I2</kbd>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">I3</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">I4</kbd>
+                                    </div>
+                                </div>
+
+                                <!-- Sit : J -->
+                                <div class="flex items-center justify-between mb-5">
+                                    <h1 class="px-5">J</h1>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">J1</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">J2</kbd>
+                                    </div>
+                                    <div class="space-x-3">
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">J3</kbd>
+                                        <kbd class="seat-key kbd px-8 py-2 bg-[#F7F8F8] border-none">J4</kbd>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- right side -->
+                        <div class="flex-1 border-l-2 border-dashed px-10">
+                            <h1 class="font-raleway font-semibold text-3xl py-4 border-b-2 border-dashed">
+                                Select Your Seat
+                            </h1>
+
+                            <!-- Sit Book list -->
+                            <div class="my-5 p-4 bg-[#F7F8F8] rounded-2xl">
+                                <div class="overflow-x-auto">
+                                    <table class="table ">
+                                        <!-- head -->
+                                        <thead>
+                                            <tr
+                                                class="font-inter text-base font-medium text-[#030712] border-b-4 border-dashed">
+                                                <th>Seat <span id="total-seat"
+                                                        class="bg-[#1DD100] px-2 rounded-full text-white checked">0</span>
+                                                </th>
+                                                <th>Class</th>
+                                                <th>Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tbody id="tbody">
+
+
+                                        </tbody>
+
+                                        <!-- Total Price Row  -->
+                                        <tr
+                                            class="font-inter text-base font-semibold text-[#030712]  border-b-0  border-t-2">
+                                            <td>Total Price</td>
+                                            <td></td>
+                                            <td>BDT<span id="total-price">0</span></td>
+                                        </tr>
+                                        <!-- After Cupon  -->
+                                        <tbody id="tbody-discount">
+                                            <tr
+                                                class="hidden font-inter text-base font-semibold text-[#030712] border-b-0">
+                                                <td>Discount</td>
+                                                <td></td>
+                                                <td>BDT<span id="">0</span></td>
+                                            </tr>
+                                        </tbody>
+                                        <!-- Cupon  -->
+                                        <tr class="font-inter text-base font-semibold text-[#030712] border-b-0">
+                                            <td colspan="3"><label
+                                                    class="input flex items-center gap-2 py-7 rounded-xl">
+                                                    <input id="cupon-input" type="text" class="grow"
+                                                        placeholder="Have any coupon ?" />
+                                                    <button id="cupon-button" onclick="cuponClick()"
+                                                        class="btn bg-[#1DD100] text-white ">Apply</button>
+                                                </label></td>
+                                        </tr>
+                                        <!-- Grand Total Price Row  -->
+                                        <tr class="font-inter text-base font-semibold text-[#030712] border-b-0">
+                                            <td>Grand Total</td>
+                                            <td></td>
+                                            <td>BDT <span id="grand-total">0</span></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <form action="">
+
+                                <!-- Details Section -->
+                                <div class="w-full">
+                                    <h1 class="py-2 font-inter font-semibold text-lg">Passenger Name*</h1>
+                                    <input type="text" placeholder="Enter your name"
+                                        class="input input-bordered w-full py-7 text-black" required />
+                                </div>
+                                <div class="w-full">
+                                    <h1 class="py-2 font-inter font-semibold text-lg">Phone Number*</h1>
+                                    <input type="number" placeholder="Enter your phone number"
+                                        class="input input-bordered w-full py-7 text-black" required />
+                                </div>
+                                <div class="w-full">
+                                    <h1 class="py-2 font-inter font-semibold text-lg">Email ID</h1>
+                                    <input type="email" placeholder="Enter your email address"
+                                        class="input input-bordered w-full py-7 text-black" />
+                                </div>
+                                <button id="next-button"
+                                    class="btn bg-[#1DD100] text-white w-full my-4 text-xl">Next</button>
+                                <div class="flex text-[#03071299] justify-evenly">
+                                    <h1 class="">Terms and Conditions</h1>
+                                    <h1 class="">Cancellation Policy</h1>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+
+    <!-- Success section -->
+    <section class="bg-[#F7F8F8] h-screen max-h-screen pt-20">
+        <div id="successful" class="font-roboto text-xl text-center mx-auto max-w-fit bg-white p-10 rounded-3xl space-y-3">
+            <img class="mx-auto" src="images/success.png" alt="">
+            <h1 class="text-[#27AE60] text-2xl font-bold">SUCCESS</h1>
+            <h3 class="max-w-[700px] text-[#4A4A4A] font-medium">Thank you for Booking Our Bus Seats. 
+                We are working hard to find the best service and deals for you. </h3>
+            <h3 class="font-light">Shortly you will find a confirmation in your email.</h3>
+            <button class="btn bg-[#27AE60] text-white px-20 rounded-3xl font-semibold">Continue</button>
+        </div>
+    </section>
 
     <footer>
 
