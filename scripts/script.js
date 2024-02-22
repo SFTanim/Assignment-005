@@ -10,6 +10,7 @@ for (let sit of allSitButton) {
         let totalSeat = callAId('total-seat');
         let totalPrice = callAId('total-price');
         let grandPrice = callAId('grand-total');
+        let seatsLeft = callAId('seats-left');
         // 1 person 4 ticket
         if (totalSeat <= 3) {
             // Add in list
@@ -28,12 +29,13 @@ for (let sit of allSitButton) {
 
                 // totalSeat Select
                 document.getElementById('total-seat').innerText = totalSeat - 1;
+                document.getElementById('seats-left').innerText = seatsLeft + 1;
                 console.log('Seat Unbook')
-
+                
                 // totalPrice & grandPrice Select
                 document.getElementById('total-price').innerText = totalPrice - 550;
                 document.getElementById('grand-total').innerText = grandPrice - 550;
-
+                
                 // Seat background change
                 event.target.style.backgroundColor = '#F7F8F8';
 
@@ -47,6 +49,7 @@ for (let sit of allSitButton) {
                 
                 // totalSeat Select
                 document.getElementById('total-seat').innerText = totalSeat + 1;
+                document.getElementById('seats-left').innerText = seatsLeft - 1;
                 console.log('Seat Book')
                 
                 // totalPrice & grandPrice Select
@@ -65,11 +68,12 @@ for (let sit of allSitButton) {
             if (event.target.classList.contains('checked')) {
                 //Seat Checked in classlist
                 event.target.classList.remove('checked');
-    
+                
                 // totalSeat Select
                 document.getElementById('total-seat').innerText = totalSeat - 1;
+                document.getElementById('seats-left').innerText = seatsLeft + 1;
                 console.log('Seat Unbook')
-    
+                
                 // totalPrice & grandPrice Select
                 document.getElementById('total-price').innerText = totalPrice - 550;
                 document.getElementById('grand-total').innerText = grandPrice - 550;
